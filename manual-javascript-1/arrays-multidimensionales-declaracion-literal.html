@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>arrays-multidimensionales-declaracion-literal</title>
+		<meta name="author" content="Eduardo" />
+		<!-- Date: 2013-02-28 -->
+		<script type="text/javascript">
+			var mesesydias = [["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],[31,28,31,30,31,30,31,30,31,30,31,30]]
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			document.write("<table border=1>");
+			document.write("<tr>");
+			for(i=0;i<mesesydias[0].length;i++){				
+			    document.write("<td>"+ mesesydias[0][i] +"</td>")			    
+			}
+			document.write("</tr>");
+			for(j=0;j<mesesydias[1].length;j++){
+				document.write("<td>"+ mesesydias[1][j]+"</td>")
+			}
+			document.write("</table>");
+			
+		</script>
+
+	</body>
+</html>
+

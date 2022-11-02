@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        dinero = 2000
+        dinero += 3000
+        dinero -= 1600
+        dinero *= 3
+        dinero /= 2
+
+        cadena1 = "tengo"
+        cadena2 = "dinero"
+        cadenaconcatenada = "tengo " + dinero
+
+        document.write(cadenaconcatenada + " pesos") //el resultado del dinero es 5100
+
+        if (dinero > 6000) {
+            document.write(" me comprare una ram de 4gb")
+        }
+        else {
+            document.write(" no me alcanza para una ram de 4gb -----------------------")
+        }
+
+        persona = "pepe"
+        dinero1 = 1000
+        dinero2 = "3000"
+        dinero3 = 2500
+        dinero1 += dinero3
+        cadena = persona + dinero1
+        document.write(cadena)
+
+        if (dinero < 5300 && persona != "jose") {
+            document.write(" no se que hacer")
+        }
+
+        lluvia = false
+        lluvia = !lluvia
+        if (lluvia) {
+            alert("caera agua")
+        }
+        document.write("<br>El tipo de dinero es: " + typeof dinero) 
+    </script>
+</body>
+
+</html>

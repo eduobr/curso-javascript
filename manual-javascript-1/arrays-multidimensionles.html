@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+     <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>otra practica con arrays</title>
+	<meta name="author" content="Eduardo" />
+        <script type="text/javascript">
+        	       	
+        </script>
+     </head>
+     <body>
+     	<script type="text/javascript">
+     		var temperaturas_medias_ciudad0 = new Array(3);
+     		temperaturas_medias_ciudad0[0] = 11
+     		temperaturas_medias_ciudad0[1] = 23
+     		temperaturas_medias_ciudad0[2] = 31
+     		
+     		var temperaturas_medias_ciudad1 = new Array(3);
+     		temperaturas_medias_ciudad1[0] = 24
+     		temperaturas_medias_ciudad1[1] = 22
+     		temperaturas_medias_ciudad1[2] = 34
+     		
+     		var temperaturas_medias_ciudad2 = new Array(3);
+     		temperaturas_medias_ciudad2[0] = 13
+     		temperaturas_medias_ciudad2[1] = 8
+     		temperaturas_medias_ciudad2[2] = 2
+     		
+     		var temperaturas_ciudades = new Array(3);
+     		temperaturas_ciudades[0] = temperaturas_medias_ciudad0
+     		temperaturas_ciudades[1] = temperaturas_medias_ciudad1
+     		temperaturas_ciudades[2] = temperaturas_medias_ciudad2
+     		
+     		document.write("<table border=1 width=200 ")
+     		for (i=0;i<temperaturas_ciudades.length;i++){
+     			document.write("<tr>")
+     			document.write("<td>ciudad " + i + "</td>")
+     			for (j=0;j<temperaturas_ciudades[i].length;j++){
+     				document.write("<td>" + temperaturas_ciudades[i][j] + "</td>")
+     			}
+     		document.write("</tr>")	
+     		}
+     		document.write("</table>")
+     	</script> 
+     </body>
+</html>

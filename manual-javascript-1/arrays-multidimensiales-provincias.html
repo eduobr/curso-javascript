@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>arrays-multidimensiales-provincias</title>
+		<meta name="author" content="Eduardo" />
+		<!-- Date: 2013-02-27 -->
+		<script type="text/javascript">
+			var ciudadesMadrid = new Array(5);
+			ciudadesMadrid[0] = "Madrid";
+			ciudadesMadrid[1] = "Getafe";
+			ciudadesMadrid[2] = "Alcorcon";
+			ciudadesMadrid[3] = "Mostoles";
+			ciudadesMadrid[4] = "Alcala de Henares";
+			
+			var ciudadesValencia = new Array(3);
+			ciudadesValencia[0] = "Valencia";			
+			ciudadesValencia[1] = "Mislata";			
+			ciudadesValencia[2] = "Paterna";
+			
+			var ciudadesLeon = new Array(2);
+			ciudadesLeon[0] = "Leon";
+			ciudadesLeon[1] = "Astorga";
+			
+			var ciudadesprovincias = new Array(3);
+			ciudadesprovincias[0] = ciudadesMadrid
+			ciudadesprovincias[1] = ciudadesValencia
+			ciudadesprovincias[2] = ciudadesLeon
+			document.write("<p>")
+			for(i=0;i<ciudadesprovincias.length;i++){
+				for(j=0;j<ciudadesprovincias[i].length;j++){
+					document.write(ciudadesprovincias[i][j] + "<br>")
+				}
+				document.write("</p>")
+			} 
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
+

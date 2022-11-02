@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>arrays-multidimensionales-declaracion-literal</title>
+		<meta name="author" content="Eduardo" />
+		<!-- Date: 2013-02-28 -->
+		<script type="text/javascript">
+			var mesesDiasEstaciones = [["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],[31,28,31,30,31,30,31,30,31,30,31,30],["Verano","Verano","Verano","Otoño","Otoño","Otoño","Invierno","Invierno","Invierno","Primavera","Primavera","Primavera"]]
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">						
+			document.write("<table border=1px>");
+			
+			for(var i=0;i<mesesDiasEstaciones.length;i++){
+				document.write("<tr>");
+				for(var mesesActual=0;mesesActual<mesesDiasEstaciones[i].length;mesesActual++){
+					document.write("<td>" + mesesDiasEstaciones[i][mesesActual] + "</td>")
+					
+				}
+				document.write("</tr>")
+			}
+			
+			document.write("</table>")
+		</script>
+
+	</body>
+</html>
+

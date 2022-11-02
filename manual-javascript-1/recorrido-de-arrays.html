@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>recorrido-de-arrays</title>
+		<meta name="author" content="Eduardo" />
+		<!-- Date: 2013-02-18 -->
+		<script type="text/javascript">
+			miarraytipos = new Array();
+			
+			miarraytipos[0] = "234";
+			miarraytipos[1] = "hola";
+			
+			alert(miarraytipos[0]);
+			alert(miarraytipos[1]);
+			
+			//puedo asignar un tipo de dato distinto siempre que quiera
+			miarraytipos[0] = "Esto era un tipo de dato numerico y ahora pasa a ser una cadena";
+			
+			alert(miarraytipos[0]);
+			alert(miarraytipos[1]);
+			
+			miarraytipos[2] = "true";
+			miarraytipos[3] = "4002";
+			miarraytipos[4] = "otro elemento de indice 4"
+			miarraytipos[10] = "pongo otro elemnto saltandome varios indices"
+			alert("tengo todos los tipos de datos mezclados " + miarraytipos[1] + " " + miarraytipos[2] + " " + miarraytipos[3]);
+			
+			document.write("<h1>Recorrido de Arrays</h1>");
+			
+			for(i=0;i<miarraytipos.length;i++){
+				document.write("el array del indice " + i  + " tiene el valor de <b>: " + miarraytipos[i] + "</b>")
+				document.write ("<br>")
+			}
+			
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
+

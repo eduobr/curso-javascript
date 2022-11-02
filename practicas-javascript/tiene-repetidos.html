@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>practica3</title>
+	<meta name="author" content="Eduardo" />
+	<!-- Date: 2013-03-03 -->
+</head>
+
+<body>
+	<script type="text/javascript">
+		function pide5valores() {
+			arrayValores = new Array();
+			//bucle para pedir 5 valores
+			for (var i = 0; i < 5; i++) {
+				var valoractual = prompt("Dime el numero " + i, 0);
+				if (valoractual == 0) {
+					return false;
+				}
+				else {
+					//meto el valor en un array
+					arrayValores[i] = valoractual;
+				}
+			}
+			//despues de este bucle tengo un array con 5 valores,tengo que buscar los repetidos
+			if (tieneRepetidos(arrayValores)) {
+				alert("tiene repetidos")
+			}
+			else {
+				alert("No hay repetidos")
+			}
+		}
+		function tieneRepetidos(valores) {
+			//hago un bucle para recorrer los elemeentos de un array
+			for (i = 0; i < valores.length - 1; i++) {
+				//alert("comprobando el valor de indice " + i)
+				//estoy con un valor y tengo que ver si es igual a los otros elementos del array
+				//solo tengo que comparar con los elementos siguientes, por que los anteriores ya fueron revisados
+				for (j = i + 1; j < valores.length; j++) {
+					alert("comprobando el valor de indice " + i + " con el valor de indice " + j)
+					if (valores[i] == valores[j]) {
+						//alert(valores[i] + " es igual que valores " + valores[j])
+						//encontre un repetido
+						return true;
+					}
+					else {
+						alert(valores[i] + " NO es igual que " + valores[j] )
+					}
+				}
+			}
+			return false;
+		}
+
+		pide5valores();
+				//alert(tieneRepetidos([1,2,3,1,5]));
+	</script>
+
+</body>
+
+</html>

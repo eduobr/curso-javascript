@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>ambito-de-variables-declaradas-en-funciones</title>
+		<meta name="author" content="Eduardo" />
+		<!-- Date: 2013-02-05 -->
+		<script type="text/javascript">		
+			function mifuncion(){
+				var equis = 5
+				
+				//todas las varibles declaradas en funciones son locales a la funcion
+				alert (equis) ;
+				
+				//desde una funcion puedo acceder a una varible global a la pagina
+				alert (y);
+				
+				//puedo modificar una varible global
+				 y = "variable modificada"
+			}
+			
+			//todas las varibles declaradas fuera de las funciones son varibles globales a la pagina
+			var y = 125;
+			
+			//llamada a la funcion
+			mifuncion();
+			
+			//despues de la llamada nuestra variable y fue modificada
+			alert(y);
+			
+			//desde fuera de una funcion no se puede acceder a variables locales
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
+

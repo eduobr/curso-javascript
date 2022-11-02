@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>for</title>
+		<meta name="author" content="Eduardo" />
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+		    var suma = 0
+		    for (var i=1; i<=3; i++){
+		    	var sumando = prompt("repeticion " + i + "\nLa suma parcial es " + suma + "\nDame una suma")
+		    	sumando = parseInt(sumando)
+		    	if (isNaN(sumando)){
+		    		break;
+		    	}
+		    	suma = sumando + suma		    	
+		    }
+		    alert("la suma total es " + suma)
+		</script>
+       
+	</body>
+</html>
+
